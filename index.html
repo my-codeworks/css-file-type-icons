@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+        <style>
+            .icon-file-alt {
+                position: relative;
+                margin:0 2px;
+                display: inline;
+            }
+            .icon-file-alt:after {
+                position: absolute;
+                /* Might need to tweak this to accommodate another font, see also the font tag. */
+                top: 1.32em;
+                left: -5%;
+                width: 110%;
+
+                content: "EXT";
+
+                background: #F00;
+                /* If you need to you can use this to "blind" off some of the background color. */
+                /* Usually needed to accommodate another font, you might need to adjust the font line as well. */
+                /* background: linear-gradient(#F00 0%,#F00 91%,transparent 92%); */
+                color: #FFF;
+
+                /* The size/line-height value pait might need to be tweaked to accommodate another font. */
+                font: normal 800 0.36em/0.95em "Source Code Pro", sans-serif;
+                text-align: center;
+            }
+
+            .icon-file-alt.png:after {
+                background: #E0D;
+                content: "PNG";
+            }
+
+            .icon-file-alt.jpg:after, .icon-file-alt.jpeg:after {
+                background: #0A0;
+                content: "JPG";
+            }
+
+            .icon-file-alt.gif:after {
+                background: #00F;
+                content: "GIF";
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is how it looks at 50% of designed size: <i class="icon-file-alt png" style="font-size:10px"></i></p>
+        <p>This is how it looks at 80% of designed size: <i class="icon-file-alt jpg" style="font-size:16px"></i></p>
+        <p>This is how it looks at 90% of designed size: <i class="icon-file-alt gif" style="font-size:18px"></i></p>
+        <p>This is how it looks at 100% of designed size: <i class="icon-file-alt jpeg" style="font-size:20px"></i></p>
+        <p>This is how it looks at 150% of designed size: <i class="icon-file-alt png" style="font-size:30px"></i></p>
+        <p>This is how it looks at 200% of designed size: <i class="icon-file-alt gif" style="font-size:40px"></i></p>
+        <p>This is how it looks at 400% of designed size: <i class="icon-file-alt jpg" style="font-size:80px"></i></p>
+    </body>
+</html>
